@@ -5,6 +5,8 @@ module.exports = (grunt) ->
       source:
         src: ["source/nes.js", "source/utils.js", "source/cpu.js", "source/keyboard.js", "source/mappers.js", "source/papu.js", "source/ppu.js", "source/rom.js", "source/ui.js"]
         dest: "build/jsnes.js"
+      retrojs:
+        src: ["source/nes.js", "source/utils.js", "source/cpu.js", "source/mappers.js", "source/papu.js", "source/ppu.js", "source/rom.js", "source/retro.js"]
     uglify:
       source:
         src: "build/jsnes.js"
